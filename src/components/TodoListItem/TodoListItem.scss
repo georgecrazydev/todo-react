@@ -1,0 +1,65 @@
+.todo__list {
+  height: 375px;
+  overflow-y: scroll;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 17px;
+
+    &-check {
+      border: none;
+      outline: none;
+      background-color: #fff;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #c0392b;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      svg {
+        display: none;
+      }
+      &:hover {
+        background-color: #f2d7d5;
+      }
+    }
+    p {
+      flex: 1;
+    }
+    &-remove {
+      border: none;
+      outline: none;
+      background-color: none;
+      background-color: #fff;
+      svg {
+        cursor: pointer;
+        path {
+          transition: all 0.2s ease;
+        }
+        &:hover {
+          path {
+            fill: #000;
+          }
+        }
+      }
+    }
+    &-completed {
+      .todo__list-item-check {
+        background-color: #c0392b;
+        svg {
+          display: block;
+        }
+      }
+      p {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

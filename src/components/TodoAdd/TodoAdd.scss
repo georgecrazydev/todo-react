@@ -1,0 +1,36 @@
+.todo__add {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  &-input {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    &::placeholder {
+      color: #ccc;
+      font-size: 18px;
+    }
+  }
+  &-button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    svg {
+      path {
+        transition: all 0.2s ease;
+      }
+    }
+    &:hover {
+      background-color: #f8f8f8;
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
