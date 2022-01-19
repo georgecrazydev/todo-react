@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="todo">
       <header className="todo__header">
-        <h4>Todo list</h4>
+        <h4>Todo list test</h4>
       </header>
       <TodoAdd onAddTask={onAddTask} />
       <ul className="todo__list">
